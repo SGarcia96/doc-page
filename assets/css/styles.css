@@ -53,6 +53,9 @@ body {
   top: 0;
   left: 0;
 }
+#navbar {
+  border-right: 1px solid rgba(197, 129, 41, 0.418);
+}
 #nav-header {
   margin: 1em;
   margin-bottom: 2em;
@@ -96,7 +99,7 @@ body {
 .main-section code {
   color: var(--gray-color);
   font-size: var(--small-font-size);
-  border: 1px solid rgb(73, 69, 63);
+  border: 1px solid rgba(73, 69, 63, 0.397);
   background-color: rgb(226, 216, 198);
   padding: 1em;
 }
