@@ -33,13 +33,13 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--regular-font-weight);
+  line-height: 1.5;
   padding: 0;
   margin: 0;
 }
 
 .container {
   display: flex;
-  gap: 2rem;
 }
 
 /***NAV***/
@@ -102,6 +102,11 @@ body {
   border: 1px solid rgba(73, 69, 63, 0.397);
   background-color: rgb(226, 216, 198);
   padding: 1em;
+  display: block;
+  text-align: left;
+  line-height: 2;
+  background-color: rgb(226, 216, 198);
+  border-radius: 5px;
 }
 .code-wrapper {
   margin: 10px;
@@ -117,4 +122,29 @@ a:hover {
 }
 li {
   color: var(--title-color);
+}
+/***MOBILE***/
+@media only screen and (max-width: 768px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    max-height: 280px;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    border-bottom: 1px solid rgba(197, 129, 41, 0.418);
+  }
+  #nav-header {
+    display: flex;
+    justify-content: center;
+  }
+  #nav-ul {
+    gap: 0;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
 }
