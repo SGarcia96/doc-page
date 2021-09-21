@@ -103,7 +103,10 @@ body {
   background-color: rgb(226, 216, 198);
   padding: 1em;
 }
-/***ANCHOR***/
+.code-wrapper {
+  margin: 10px;
+}
+/***ELEMENTS***/
 a {
   text-decoration: none;
   color: var(--second-color);

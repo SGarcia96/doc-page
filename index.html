@@ -69,83 +69,101 @@
           <header>
             <h2 class="section-title">What you should already know</h2>
           </header>
-          <p>This guide assumes you have the following basic background:</p>
-          <ul>
-            <li><p>A general understanding of the Internet and the World Wide Web (WWW).</p></li>
-            <li><p>Good working knowledge of HyperText Markup Language (HTML).</p></li>
-            <li>
-              <p>
-                Some programming experience. If you are new to programming, try one of the tutorials
-                linked on the main page about JavaScript.
-              </p>
-            </li>
-          </ul>
+          <article class="section-article">
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+              <li><p>A general understanding of the Internet and the World Wide Web (WWW).</p></li>
+              <li><p>Good working knowledge of HyperText Markup Language (HTML).</p></li>
+              <li>
+                <p>
+                  Some programming experience. If you are new to programming, try one of the
+                  tutorials linked on the main page about JavaScript.
+                </p>
+              </li>
+            </ul>
+          </article>
         </section>
         <section id="hello_world" class="main-section">
           <header>
             <h2 class="section-title">Hello World</h2>
           </header>
-          <p>
-            To get started with writing JavaScript, open the Scratchpad and write your first "Hello
-            world" JavaScript code:
-          </p>
-          <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");"</code>
-          <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+          <article class="section-article">
+            <p>
+              To get started with writing JavaScript, open the Scratchpad and write your first
+              "Hello world" JavaScript code:
+            </p>
+            <div class="code-wrapper">
+              <code
+                >function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");"</code
+              >
+            </div>
+            <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+          </article>
         </section>
         <section id="declaring_variables" class="main-section">
           <header>
             <h2 class="section-title">Declaring variables</h2>
           </header>
-          <p>You can declare a variable in three ways: With the keyword var. For example,</p>
-          <code>var x = 42.</code>
-          <p>
-            This syntax can be used to declare both local and global variables. By simply assigning
-            it a value. For example,
-          </p>
-          <code>x = 42.</code>
-          <p>
-            This always declares a global variable. It generates a strict JavaScript warning. You
-            shouldn't use this variant. With the keyword let. For example,
-          </p>
-          <code>let y = 13.</code>
-          <p>
-            This syntax can be used to declare a block scope local variable. See Variable scope
-            below.
-          </p>
+          <article class="section-article">
+            <p>You can declare a variable in three ways: With the keyword var. For example,</p>
+            <div class="code-wrapper">
+              <code>var x = 42.</code>
+            </div>
+            <p>
+              This syntax can be used to declare both local and global variables. By simply
+              assigning it a value. For example,
+            </p>
+            <div class="code-wrapper">
+              <code>x = 42.</code>
+            </div>
+            <p>
+              This always declares a global variable. It generates a strict JavaScript warning. You
+              shouldn't use this variant. With the keyword let. For example,
+            </p>
+            <div class="code-wrapper">
+              <code>let y = 13.</code>
+            </div>
+            <p>
+              This syntax can be used to declare a block scope local variable. See Variable scope
+              below.
+            </p>
+          </article>
         </section>
         <section id="data_types" class="main-section">
           <header>
             <h2 class="section-title">Data types</h2>
           </header>
-          <p>The latest ECMAScript standard defines seven data types:</p>
-          <ul>
-            <li><p>Six data types that are primitives:</p></li>
+          <article class="section-article">
+            <p>The latest ECMAScript standard defines seven data types:</p>
             <ul>
-              <li><p>Boolean. true and false.</p></li>
-              <li><p>undefined. A top-level property whose value is undefined.</p></li>
-              <li>
-                <p>
-                  null. A special keyword denoting a null value. Because JavaScript is
-                  case-sensitive, null is not the same as Null, NULL, or any other variant.
-                </p>
-              </li>
-              <li><p>Number. 42 or 3.14159.</p></li>
-              <li><p>String. "Howdy"</p></li>
-              <li>
-                <p>
-                  Symbol (new in ECMAScript 2015). A data type whose instances are unique and
-                  immutable.
-                </p>
-              </li>
+              <li><p>Six data types that are primitives:</p></li>
+              <ul>
+                <li><p>Boolean. true and false.</p></li>
+                <li><p>undefined. A top-level property whose value is undefined.</p></li>
+                <li>
+                  <p>
+                    null. A special keyword denoting a null value. Because JavaScript is
+                    case-sensitive, null is not the same as Null, NULL, or any other variant.
+                  </p>
+                </li>
+                <li><p>Number. 42 or 3.14159.</p></li>
+                <li><p>String. "Howdy"</p></li>
+                <li>
+                  <p>
+                    Symbol (new in ECMAScript 2015). A data type whose instances are unique and
+                    immutable.
+                  </p>
+                </li>
+              </ul>
+              <li><p>and Object</p></li>
             </ul>
-            <li><p>and Object</p></li>
-          </ul>
-          <p>
-            Although these data types are a relatively small amount, they enable you to perform
-            useful functions with your applications. Objects and functions are the other fundamental
-            elements in the language. You can think of objects as named containers for values, and
-            functions as procedures that your application can perform.
-          </p>
+            <p>
+              Although these data types are a relatively small amount, they enable you to perform
+              useful functions with your applications. Objects and functions are the other
+              fundamental elements in the language. You can think of objects as named containers for
+              values, and functions as procedures that your application can perform.
+            </p>
+          </article>
         </section>
       </main>
     </div>
