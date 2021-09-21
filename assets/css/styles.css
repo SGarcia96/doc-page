@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/***CSS VARIABLES***/
+:root {
+  --body-font: "Lato", sans-serif;
+  --big-font-size: 2rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.8rem;
+  --strong-font-weight: 900;
+  --regular-font-weight: 600;
+}
+
+:root {
+  --gray-color: #69655d;
+  --first-color: #f1c40f;
+  --second-color: #cc951f;
+  --title-color: #996e1e;
+}
+
+/***GLOBAL***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--regular-font-weight);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+/***NAV***/
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+#nav-header {
+  margin: 1em;
+  margin-bottom: 2em;
+}
+#nav-header > h1 {
+  font-weight: var(--strong-font-weight);
+  color: var(--title-color);
+}
+#nav-ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  gap: 1.2em;
+}
+#nav-ul > li {
+  list-style: none;
+}
+
+/***SECTIONS***/
+#main-doc {
+  margin-top: 50px;
+  margin-left: 320px;
+}
+.section-article {
+  padding: 20px;
+}
+.section-title {
+  color: var(--title-color);
+}
+.main-section p {
+  color: var(--gray-color);
+  padding: 10px;
+}
+.main-section ul {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.main-section code {
+}
+/***ANCHOR***/
+a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+a:hover {
+  color: var(--first-color);
+  transition: color 0.5s;
+}
